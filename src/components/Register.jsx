@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom"
-
-function Form() {
+function Register() {
     return (
-        <div className="  bg-white px-10 py-20 rounded-3xl border-2 border-gray-200">
+        <div className="bg-white px-10 py-20 rounded-3xl border-2 border-gray-200">
             <h1 className="text-5xl font-semibold">Welcome Back</h1>
             <p className="font-medium text-gray-500 mt-4">Welcome back! Please enter Your details.</p>
               <div className="mt-8">
@@ -31,14 +29,14 @@ function Form() {
                         <path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"fill="#EB4335"></path>
                       </svg>
 
-                            Sign in with Google</button>
+                            Create Account with Google</button>
                    </div>
                    <div className='mt-8 flex justify-center items-center'>
-                    <p className="font-medium text-base">Don't Have an Account?</p>
-                    <button className="text-blue-700 text-base font-medium ml-2"o ><Link to ='Register'>Sign Up</Link></button>
+                    <p className="font-medium text-base">Already Have an Account?</p>
+                    <button className="text-blue-700 text-base font-medium ml-2">Sign In</button>
                    </div> 
               </div>
         </div>
     )
 }
-export default Form
+export default Register
