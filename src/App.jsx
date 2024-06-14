@@ -1,21 +1,23 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import Form from './components/Form'
+import Register from './components/Register'
+import ForgotPass from './components/Forgotpass'
 
 
 function App() {
   
   return (
-    <div className='flex w-full h-screen'>
-      <div className='w-full flex items-center justify-center '> 
-         <Routes>
-          <Route path ='Form' element={<Form/>}/>
-         </Routes>
+    <div className='w-full h-screen'>
+      <div className='w-full flex items-center justify-center '>  
+         <Router>
+          <Routes>
+          <Route path ='/Form' element={<Form/>}/>
+          <Route path ='/Register' element={<Register/>}/>
+          <Route path ='/Forgotpass' element={<ForgotPass/>}/>
+          </Routes>
+        </Router>
       </div>
-      <div>
-
-      </div>
-    
    
     </div>
   )

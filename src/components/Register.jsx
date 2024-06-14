@@ -1,26 +1,26 @@
+import { Link } from "react-router-dom"
+
 function Register() {
     return (
         <div className="bg-white px-10 py-20 rounded-3xl border-2 border-gray-200">
-            <h1 className="text-5xl font-semibold">Welcome Back</h1>
-            <p className="font-medium text-gray-500 mt-4">Welcome back! Please enter Your details.</p>
+            <h1 className="text-4xl font-semibold">Create Your Account</h1>
+            <p className="font-medium text-center text-gray-500 mt-4"> Please enter Your details. </p>
               <div className="mt-8">
+                  <div>
+                     <label className="text-lg font-medium">Name</label>
+                     <input className='w-full border-2 border-gray-100 rounded-2xl p-3 mt-1 bg-transparent' placeholder="Enter Your Full Name" type="name" required/>
+                   </div>                  
+                   
                    <div>
                      <label className="text-lg font-medium">Email</label>
-                     <input className='w-full border-2 border-gray-100 rounded-2xl p-3 mt-1 bg-transparent' placeholder="Enter Your Email" type="email"/>
+                     <input className='w-full border-2 border-gray-100 rounded-2xl p-3 mt-1 bg-transparent' placeholder="Enter Your Email" type="email" required/>
                    </div>
                    <div>
                      <label className="text-lg font-medium">Password</label>
-                     <input className="w-full border-2 brorder-gray-100 rounded-2xl p-3 mt-1 bg-transparent" placeholder="Enter Your Password" type="password"/>
-                   </div>
-                   <div className="mt-8 flex justify-between items-center">
-                       <div> 
-                          <input type = "checkbox"/>
-                          <label className="ml-2 font-medium text-base" for="remember">Remember me </label>
-                       </div>
-                       <button className='font-medium text-base text-blue-600'>Forgot Password</button>
+                     <input className="w-full border-2 brorder-gray-100 rounded-2xl p-3 mt-1 bg-transparent" placeholder="Enter Your Password" type="password" required/>
                    </div>
                    <div className="mt-8 flex flex-col gap-y-4">
-                        <button className=" active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-2xl  bg-blue-700 text-white text-lg font-bold">Sign in</button>
+                        <button className=" active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-2xl  bg-blue-700 text-white text-lg font-bold">Sign Up</button>
                         <button className="flex rounded-2xl py-3 border-2 items-center justify-center gap-2 active:scale-[.98] active:duration-75  hover:scale-[1.01] ease-in-out transition-all" >
                         <svg width={24} height={24} viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg">
                         <path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path>
@@ -33,7 +33,7 @@ function Register() {
                    </div>
                    <div className='mt-8 flex justify-center items-center'>
                     <p className="font-medium text-base">Already Have an Account?</p>
-                    <button className="text-blue-700 text-base font-medium ml-2">Sign In</button>
+                    <button className="text-blue-700 text-base font-medium ml-2"><Link to = "/Form">Sign In</Link></button>
                    </div> 
               </div>
         </div>
