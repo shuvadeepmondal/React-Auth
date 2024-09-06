@@ -17,7 +17,7 @@ function Form() {
                    <div className="mt-8 flex justify-between items-center">
                        <div> 
                           <input type = "checkbox"/>
-                          <label className="ml-2 font-medium text-base" for="remember">Remember me </label>
+                          <label className="ml-2 font-medium text-base" >Remember me </label>
                        </div>
                        <button className='font-medium text-base text-blue-600'><Link to = '/Forgotpass'>Forgot Password</Link></button>
                    </div>
@@ -34,8 +34,8 @@ function Form() {
                             Sign in with Google</button>
                    </div>
                    <div className='mt-8 flex justify-center items-center'>
-                    <p className="font-medium text-base">Don't Have an Account?</p>
-                    <button className="text-blue-700 text-base font-medium ml-2"o ><Link to ='/Register'>Sign Up</Link></button>
+                    <p className="font-medium text-base">Do not Have an Account?</p>
+                    <button className="text-blue-700 text-base font-medium ml-2" ><Link to ='/Register'>Sign Up</Link></button>
                    </div> 
               </div>
         </div>

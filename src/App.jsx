@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Form, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 // import './App.css'
 // import Form from './components/Form'
 // import Register from './components/Register'
@@ -27,7 +27,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Navbar from './components/NavB';
 import Home from './components/Home';
 import About from './components/About';
-import
+import Form from './components/Form'  
 
 
 function App() {
@@ -38,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Form />} />
           
         </Routes>
       </div>
