@@ -16,7 +16,7 @@ const NavB = () => {
             <Link to="/about" className="hover:underline">About</Link>
           </li>
           <li>
-            <Link to="/login" className="hover:underline">Login</Link>
+            <Link to="/login" className="hover:underline">Join Us</Link>
           </li>
         </ul>
       </div>
